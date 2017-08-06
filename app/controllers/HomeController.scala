@@ -26,7 +26,7 @@ class HomeController extends Controller{
 
   def index() = Action{ implicit request =>
 
-      Ok(views.html.message())
+      Ok(views.html.index())
 
   }
 
@@ -49,7 +49,7 @@ class HomeController extends Controller{
 
   def displayMessage() = Action { implicit request: Request[AnyContent] =>
 
-    Ok(views.html.index())
+    Ok(views.html.message())
 
   }
 
